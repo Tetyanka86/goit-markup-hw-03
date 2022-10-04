@@ -97,6 +97,7 @@ body{
 
 
 .button{
+    border: none;
     font-style: inherit;
     font-weight: 700;
     font-size: 16px;
@@ -110,6 +111,11 @@ body{
 
 
 /* Navigation */
+
+header{
+    border: 1px solid #ECECEC;;
+    border-bottom: 1px solid #ECECEC;;
+}
 
 .navigation{
     display: flex;
@@ -243,7 +249,7 @@ body{
         /* Work-list */
 
 .work-list{
-    padding-top: 94px;
+    padding: 94px 0;
 }
 
 .work-item{
@@ -269,6 +275,7 @@ body{
 
 .team-list{
     display: flex;
+    
 }
 .team-description{
     text-align: center;
@@ -277,13 +284,14 @@ body{
 
 .team-item{
     background-color: #fff;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
 }
 .team-list .item + .item{
     margin-left: 30px;
 }
 
 .team-title{
-    padding-top: 94px;
     margin-bottom: 50px;
 }    
     
@@ -361,8 +369,9 @@ body{
 .filters-list .item + .item{
     padding-left: 8px;
 }
-.button  .filter{
+.button.filter{
     border: none;
+    padding: 6px 22px;
     font-family: inherit;
     font-weight: 500;
     font-size: 16px;
